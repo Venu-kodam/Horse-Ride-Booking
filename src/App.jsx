@@ -3,12 +3,16 @@ import Bookingform from "./components/Bookingform";
 import ConfirmationPopup from "./components/ConfirmationPopup";
 import { useState } from "react";
 import HorseCard from "./components/HorseCard";
+import horse1 from "./assets/horse5.jpg"
+import horse2 from "./assets/horse4.jpg"
+import horse3 from "./assets/horse7.jpg"
+import horse4 from "./assets/horse2.jpg"
 
 const horses = [
-  { name: 'Juliet', image: 'src/assets/horse5.jpg' },
-  { name: 'Jaguar', image: 'src/assets/horse4.jpg' },
-  { name: 'Rio', image: 'src/assets/horse7.jpg' },
-  { name: 'Misty', image: 'src/assets/horse2.jpg' }
+  { name: 'Juliet', image: horse1 },
+  { name: 'Jaguar', image: horse2 },
+  { name: 'Rio', image: horse3 },
+  { name: 'Misty', image: horse4 }
 ];
 function App() {
   const [selectedHorse, setSelectedHorse] = useState(null);
